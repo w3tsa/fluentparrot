@@ -16,7 +16,7 @@ describe("App", () => {
       }),
     ).toBeInTheDocument();
   });
-  it("renders h1 with text Fluent Parrot", () => {
+  it("renders h1 with text Resume.Analyze.Apply.", () => {
     // Arrange
     render(<App />);
     // Act
@@ -25,6 +25,6 @@ describe("App", () => {
       screen.getByRole("heading", {
         level: 1,
       }),
-    ).toHaveTextContent("Fluent Parrot");
+    ).toHaveTextContent("Resume.Analyze.Apply.");
   });
 });

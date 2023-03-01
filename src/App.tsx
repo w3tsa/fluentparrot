@@ -3,7 +3,14 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>Fluent Parrot</h1>
+      <h1 aria-label="Resume. Analyze. Apply.">
+        <span>Resume.</span>
+        <br />
+        <span>Analyze.</span>
+        <br />
+        <span>Apply.</span>
+        <br />
+      </h1>
     </>
   );
 }
