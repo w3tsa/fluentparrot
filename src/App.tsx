@@ -1,17 +1,23 @@
 import "./App.css";
 
+// component
+import Hero from "./components/hero/Hero";
+import JobDescription from "./components/job_description/JobDescription";
+import Resume from "./components/resume/Resume";
+import UpdatedResume from "./components/updated_resume/UpdatedResume";
+
 function App() {
   return (
-    <>
-      <h1 aria-label="Resume. Analyze. Apply.">
-        <span>Resume.</span>
-        <br />
-        <span>Analyze.</span>
-        <br />
-        <span>Apply.</span>
-        <br />
-      </h1>
-    </>
+    <div className="App">
+      <Hero />
+      <br />
+      <JobDescription />
+      <br />
+      <Resume />
+      <button>Generate</button>
+      <br />
+      <UpdatedResume />
+    </div>
   );
 }
 
