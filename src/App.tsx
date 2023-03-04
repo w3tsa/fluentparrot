@@ -1,12 +1,12 @@
+import { Container, Divider } from "@chakra-ui/react";
 import "./App.css";
 
 // component
 import Hero from "./components/hero/Hero";
-import JobDescription from "./components/job_description/JobDescription";
+import JobDescription from "./components/job_description";
 import Resume from "./components/resume/Resume";
 import UpdatedResume from "./components/updated_resume/UpdatedResume";
 import Header from "./components/header";
-import { Container, Divider } from "@chakra-ui/react";
 import Footer from "./components/footer";
 function App() {
   return (

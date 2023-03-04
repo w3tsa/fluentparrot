@@ -4,10 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "lint": "eslint src/**/*.{ts,tsx}",
+    "lint:fix": "eslint --fix 'src/**/*.{ts,tsx}'",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "coverage": "vitest --coverage"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.17",
@@ -24,7 +27,10 @@
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
     "@vitejs/plugin-react": "^3.1.0",
+    "@vitest/coverage-c8": "^0.29.2",
     "eslint": "^8.35.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.6.0",

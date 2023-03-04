@@ -1,6 +1,8 @@
 import { Box, Flex, Text, Icon, Link } from "@chakra-ui/react";
 import { BsGithub, BsTwitter } from "react-icons/bs";
 
+type Props = {};
+
 const Footer = (props: Props) => {
   return (
     <Flex justifyContent={"space-between"} alignItems={"center"} mb={5}>
