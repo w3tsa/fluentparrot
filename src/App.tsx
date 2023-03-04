@@ -5,18 +5,18 @@ import Hero from "./components/hero/Hero";
 import JobDescription from "./components/job_description/JobDescription";
 import Resume from "./components/resume/Resume";
 import UpdatedResume from "./components/updated_resume/UpdatedResume";
-
+import Header from "./components/header";
+import { Container } from "@chakra-ui/react";
 function App() {
   return (
     <div className="App">
-      <Hero />
-      <br />
-      <JobDescription />
-      <br />
-      <Resume />
-      <button>Generate</button>
-      <br />
-      <UpdatedResume />
+      <Container maxW={"container.md"}>
+        <Header />
+        <Hero />
+        <JobDescription />
+        <Resume />
+        <UpdatedResume />
+      </Container>
     </div>
   );
 }
