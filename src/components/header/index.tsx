@@ -14,7 +14,7 @@ type ImageProps = {
   height: string;
 };
 
-const index = (props: Props) => {
+const Header = (props: Props) => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Flex justifyContent={"space-between"} alignItems={"center"} mt={"20px"}>
@@ -43,4 +43,4 @@ const index = (props: Props) => {
   );
 };
 
-export default index;
+export default Header;

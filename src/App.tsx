@@ -7,6 +7,7 @@ import Resume from "./components/resume/Resume";
 import UpdatedResume from "./components/updated_resume/UpdatedResume";
 import Header from "./components/header";
 import { Container, Divider } from "@chakra-ui/react";
+import Footer from "./components/footer";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,8 @@ function App() {
         <JobDescription />
         <Resume />
         <UpdatedResume />
+        <Divider orientation="horizontal" mb={5} />
+        <Footer />
       </Container>
     </div>
   );
