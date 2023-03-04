@@ -8,6 +8,8 @@ import Resume from "./components/resume/Resume";
 import UpdatedResume from "./components/updated_resume/UpdatedResume";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import GenerateButton from "./components/GenerateButton";
+
 function App() {
   return (
     <div className="App">
@@ -15,9 +17,12 @@ function App() {
         <Header />
         <Divider orientation="horizontal" mt={5} />
         <Hero />
-        <JobDescription />
-        <Resume />
-        <UpdatedResume />
+        <Container>
+          <JobDescription />
+          <Resume />
+          <GenerateButton />
+          <UpdatedResume />
+        </Container>
         <Divider orientation="horizontal" mb={5} />
         <Footer />
       </Container>
