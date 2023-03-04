@@ -1,26 +1,10 @@
-.container {
-  /* display: grid;
-    place-items: center;
-    min-height: 100vh; */
-  text-align: center;
-  /* background: hsl(0 0% 20%); */
-}
-
-.text-size_md {
-  font-size: clamp(3rem, 8vmin, 8rem);
-  border: none;
-}
-.text-size_sm {
-  font-size: clamp(3rem, 5vmin, 8rem);
-}
-
 .boujee-text {
   --bg-size: 400%;
-  --color-one: hsl(339, 96%, 38%);
-  --color-two: hsl(308, 95%, 55%);
-  --color-three: hsl(300, 93%, 52%);
+  --color-one: hsl(257, 96%, 38%);
+  --color-two: hsl(217, 95%, 55%);
+  --color-three: hsl(201, 93%, 52%);
   /* font-family: sans-serif; */
-  font-size: clamp(3rem, 10vmin, 8rem);
+  /* font-size: clamp(3rem, 10vmin, 8rem); */
   background: linear-gradient(
       90deg,
       var(--color-one),

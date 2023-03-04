@@ -16,7 +16,7 @@ describe("App", () => {
       }),
     ).toBeInTheDocument();
   });
-  it("renders h1 with text Resume.Analyze.Apply.", () => {
+  it("renders h1 with text Generate your next Resume/cover-letter using chatGPT", () => {
     // Arrange
     render(<App />);
     // Act
@@ -25,6 +25,13 @@ describe("App", () => {
       screen.getByRole("heading", {
         level: 1,
       }),
-    ).toHaveTextContent("Resume.Analyze.Apply.");
+    ).toHaveTextContent("Generate your next Resume/cover-letter using chatGPT");
+  });
+  it("Has an anchor tag that has href attribute", () => {
+    // Arrange
+    render(<App />);
+    // Act
+    // Expect | Assert
+    expect(screen.getByRole("link")).toHaveAttribute("href");
   });
 });
